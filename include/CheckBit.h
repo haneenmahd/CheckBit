@@ -1,5 +1,9 @@
-#include <stdlib.h> 
-typedef enum { BIT_64, BIT_32 } BitType; 
+#include <stdlib.h>
+
+typedef enum { 
+  BIT_64, 
+  BIT_32 
+} BitType;
 
 BitType getBitType() { 
   BitType bit_type; 
