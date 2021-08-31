@@ -1,13 +1,13 @@
-CC := clang 
-TARGET := main.c 
-OUTPUT := main.out 
+CC := clang
+TARGET_FILE := main.c
+OUTPUT_FILE := main.out
 
-all: 
-  make build 
-  make test 
+all:
+	make build
+	make test
 
-build: 
-  $(CC) $(TARGET) -o $(OUTPUT) 
+build:
+	$(CC) $(TARGET_FILE) -o $(OUTPUT_FILE)
 
-test: main.out
-  ./main.out
+test: $(OUTPUT_FILE)
+	./main.out
