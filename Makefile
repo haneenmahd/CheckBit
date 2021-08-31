@@ -1,14 +1,13 @@
-CC := clang++
-TARGET_FILE := main.c
-INCLUDE_DIR := ./include
-OUTPUT_FILE := ./test.out
+CC := clang 
+TARGET := main.c 
+OUTPUT := main.out 
 
-all:
-  make build
-  make test
+all: 
+  make build 
+  make test 
 
-build:
-  $(CC) $(TARGET_FILE) -I$(INCLUDE_DIR) -o $(OUTPUT_FILE)
+build: 
+  $(CC) $(TARGET) -o $(OUTPUT) 
 
-test:
-  ./test.out
+test: main.out
+  ./main.out
